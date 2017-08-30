@@ -1,12 +1,11 @@
 
 (function() {
   const channel = 'kitty';
-  const config = require('./config.js');
   
   // get your own keys at https://pubnub.com
   const pubnub = PUBNUB.init({
-    subscribe_key: config.pubnub.subscribe_key,
-    publish_key: config.pubnub.publish_key
+    subscribe_key: PUBNUB_SUBSCRIBE_KEY,
+    publish_key: PUBNUB_PUBLISH_KEY
   });
 
   pubnub.subscribe({
