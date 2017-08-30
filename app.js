@@ -1,11 +1,10 @@
-
 (function() {
   const channel = 'kitty';
-  
+
   // get your own keys at https://pubnub.com
   const pubnub = PUBNUB.init({
-    subscribe_key: PUBNUB_SUBSCRIBE_KEY,
-    publish_key: PUBNUB_PUBLISH_KEY
+    subscribe_key: 'sub-c-64ab6baa-8d1d-11e7-980d-9ed76efe37f8',
+    publish_key: 'pub-c-4a3aba1b-781e-469d-bf32-f38b01a704cc'
   });
 
   pubnub.subscribe({
