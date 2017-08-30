@@ -677,7 +677,7 @@
             a.params = {
                 pnsdk: "PubNub-JS-Web/3.7.11"
             };
-            var La = +a.windowing || 10, xb = (+a.timeout || 310) * F, bb = (+a.keepalive || 60) * F, yb = a.timecheck || 0, cb = a.noleave || 0, P = a.publish_key || "demo", t = a.subscribe_key || "demo", D = a.auth_key || "", Ea = a.secret_key || "", ib = a.hmac_SHA256, ta = a.ssl ? "s" : "", la = "https" + ta + "://" + (a.origin || "pubsub.pubnub.com"), O = oa(la), jb = oa(la), W = [], Ra = r, Pa = 0, Sa = 0, kb = 0, Ba = 0, Fa = a.restore || 0, ga = 0, Ta = A, I = {}, S = {}, X = {}, Ca = y, T = Ha(a.heartbeat || a.pnexpires || 0, a.error), Q = a.heartbeat_interval || T / 2 - 1, Qa = A, Bb = a.no_wait_for_pending, lb = a["compatible_3.5"] || A, L = a.xdr, R = a.params || {}, m = a.error || C(), Ab = a._is_online || function() {
+            var La = +a.windowing || 10, xb = (+a.timeout || 310) * F, bb = (+a.keepalive || 60) * F, yb = a.timecheck || 0, cb = a.noleave || 0, P = a.publish_key || "demo", t = a.subscribe_key || "demo", D = a.auth_key || "", Ea = a.secret_key || "", ib = a.hmac_SHA256, ta = a.ssl ? "s" : "", la = "http" + ta + "://" + (a.origin || "pubsub.pubnub.com"), O = oa(la), jb = oa(la), W = [], Ra = r, Pa = 0, Sa = 0, kb = 0, Ba = 0, Fa = a.restore || 0, ga = 0, Ta = A, I = {}, S = {}, X = {}, Ca = y, T = Ha(a.heartbeat || a.pnexpires || 0, a.error), Q = a.heartbeat_interval || T / 2 - 1, Qa = A, Bb = a.no_wait_for_pending, lb = a["compatible_3.5"] || A, L = a.xdr, R = a.params || {}, m = a.error || C(), Ab = a._is_online || function() {
                 return 1
             }
             , M = a.jsonp_cb || function() {
