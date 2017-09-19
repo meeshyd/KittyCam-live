@@ -22,7 +22,7 @@ i {
 }
 
 i:hover {
-	color: #808080;
+	color: #bebebe;
 }
 
 #photos {
@@ -38,7 +38,7 @@ i:hover {
 }
 
 img {
-	border: 4px solid #808080;
+	border: 4px solid #bebebe;
 }
 
 footer {
