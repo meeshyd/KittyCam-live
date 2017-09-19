@@ -1,8 +1,8 @@
 (function() {
-  const channel = 'kitty';
+  var channel = 'kitty';
 
   // get your own keys at https://pubnub.com
-  const pubnub = PUBNUB.init({
+  var pubnub = PUBNUB.init({
     subscribe_key: 'sub-c-64ab6baa-8d1d-11e7-980d-9ed76efe37f8',
     publish_key: 'pub-c-4a3aba1b-781e-469d-bf32-f38b01a704cc'
   });
@@ -37,12 +37,12 @@
   }
 
   function displayPhoto(m) {
-    let time = new Date(m.timestamp).toLocaleString();
+    var time = new Date(m.timestamp).toLocaleString();
 
-    let photo =  document.createElement('div');
+    var photo =  document.createElement('div');
     photo.setAttribute('class', 'photo');
 
-    let elem = document.createElement('img');
+    var elem = document.createElement('img');
     elem.setAttribute('src', m.image);
 
     elem.addEventListener('error', function(e){ 
@@ -50,14 +50,14 @@
       this.parentNode.style.display = 'none';
     })
 
-    let text = document.createElement('figcaption');
+    var text = document.createElement('figcaption');
     text.textContent = time;
 
     photo.appendChild(elem);
     photo.appendChild(text);
 
-    let parentElement = document.getElementById('photos');
-    let firstChild = parentElement.firstChild;
+    var parentElement = document.getElementById('photos');
+    var firstChild = parentElement.firstChild;
     parentElement.insertBefore(photo, firstChild);
   }
 
